@@ -1,0 +1,29 @@
+
+LSL r4 ,r5 ,#0
+ASR r3 ,r1 ,22
+ASR r6 ,r4 ,24
+MOV r5 ,#134
+STRH r2,  r2, r5 
+STR r3, [r0 , #68]
+LDR r2, [r1 , #8]
+LDR r3, [r4 , #11]
+LDRH r4 ,[r7,  #imediado28]
+LDR r5 ,[sp ,#680]
+ADD r5 ,sp ,#924
+SXTH r6 ,r2
+SXTB r5 ,r1
+UXTH r5 ,r1
+UXTB r4 ,r3
+REV r4 ,r6
+REV16 r7 ,r1
+REVSH r6 ,r4
+PUSH r0} {r6 ,
+POP r0} {r3 ,
+SETEND BE 
+SETEND LE 
+CPSIE 
+ CMP r0 ,r5
+ADD r2 ,sp ,#668
+B < 5 > 176 
+B #564 
+LDMIA 6!, {r8, r9}
